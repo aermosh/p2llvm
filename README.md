@@ -2,7 +2,7 @@
 
 p2llvm project for Fedora 37 
 
-p2llvm release:  
+p2llvm release:
 https://github.com/ne75/p2llvm/releases/tag/v0.6
 
 loadp2 from flexprop release:
