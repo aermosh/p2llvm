@@ -1,6 +1,6 @@
 ************************************************************************
 
-Propller 2: p2llvm project for Fedora 37 
+Propller 2 (P2): p2llvm project for Fedora 37 
 
 p2llvm release:
 https://github.com/ne75/p2llvm/releases/tag/v0.6
@@ -24,7 +24,7 @@ make
 
 ***************************************************************************
 
-If P2 (propeller 2) is connected to your USB port then output should look something like this:
+If P2 is connected to your USB port then output should look something like this:
 
 
 rm -rf ./build
@@ -95,5 +95,43 @@ make: *** [Makefile:28: load] Error 1
 
 
 /opt/p2llvm/bin/loadp2 -v -t -b 2000000 -FIFO 1024 "@0=/opt/p2llvm/loaders/P2ES_flashloader.bin,@8000+build/hello_world_p2llvm.elf"
+
+Terminal output shoudl look like this
+
+trying /dev/ttyUSB0...
+
+P2 version G found on serial port /dev/ttyUSB0
+
+Setting load mode to CHIP
+
+Setting clock_mode to 12427f8
+
+Loading fast loader for chip...
+
+Sending header
+
+Loading /opt/p2llvm/loaders/P2ES_flashloader.bin - 32800 bytes
+
+chksum: a OK
+
+Sending header
+
+Loading build/hello_world_p2llvm.elf - 507904 bytes
+
+chksum: 74 OK
+
+( Entering terminal mode.  Press Ctrl-] or Ctrl-Z to exit. )
+
+P2-ES Flash Programmer
+
+Erasing flash...
+
+Programming...
+
+Done
+
+
+Hello World from p2llvm!
+
 
 ****************************************************************************
