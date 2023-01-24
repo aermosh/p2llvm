@@ -16,16 +16,14 @@ sudo tar -xvzf p2llvm.tar.gz -C /opt
 
 ***************************************************************************
 
-2. Dowload hello_world directory and check if everyhting works correctly:
+2. Download hello_world_p2llvm.zip, unzip it, and check if everyhting works correctly:
 
-cd hello_world
+cd hello_world_p2llvm
 
 make
 
-***************************************************************************
 
 If P2 is connected to your USB port then output should look something like this:
-
 
 rm -rf ./build
 
@@ -64,10 +62,8 @@ chksum: ad OK
 
 Hello World from p2llvm!
 
-***************************************************************************
 
 If no P2 is connected or found then output will look like this:
-
 
 rm -rf ./build
 
@@ -96,7 +92,7 @@ make: *** [Makefile:28: load] Error 1
 
 /opt/p2llvm/bin/loadp2 -v -t -b 2000000 -FIFO 1024 "@0=/opt/p2llvm/loaders/P2ES_flashloader.bin,@8000+build/hello_world_p2llvm.elf"
 
-Terminal output shoudl look like this
+Terminal output shoudl look like this:
 
 trying /dev/ttyUSB0...
 
@@ -132,6 +128,5 @@ Done
 
 
 Hello World from p2llvm!
-
 
 ****************************************************************************
