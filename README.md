@@ -1,6 +1,6 @@
 ************************************************************************
 
-Propller 2 (P2): p2llvm project for Fedora 37 
+Working with P2 (Parallax Propller 2) - p2llvm project for Fedora 37 
 
 p2llvm release:
 https://github.com/ne75/p2llvm/releases/tag/v0.6
