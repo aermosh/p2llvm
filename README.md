@@ -16,9 +16,15 @@ sudo tar -xvzf p2llvm.tar.gz -C /opt
 
 ***************************************************************************
 
-2. Download hello_world_p2llvm.zip, unzip it, and check if everyhting works correctly:
+2. Download and unzip hello_world_p2llvm.zip:
+
+unzip hello_world_p2llvm.zip
+
+Switch to hello_world_p2llv directory:
 
 cd hello_world_p2llvm
+
+Run make to check if everyhting works correctly:
 
 make
 
